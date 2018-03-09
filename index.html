@@ -1,15 +1,49 @@
 <html>
     <head>
         <title>Bindtape</title>
-        <style>
-            div {
-                font-size: 15pt;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="jquery-3.3.1.min.js"></script>
+        <script>
+            var sdegree = 0;
+
+            $(window).scroll(function() {
+                sdegree = sdegree - 2;
+                //var scrollTop = $(window).scrollTop();
+                //if (scrollTop >= 200) {
+                //    $('.bt-header__overlay').height(60);
+                //} else {
+                //    $('.bt-header__overlay').height(100 - scrollTop / 5);
+                //}
+                var srotate = "rotate(" + sdegree + "deg)";
+                $(".bt-header__logo_wheel").css({"-moz-transform" : srotate, "-webkit-transform" : srotate});
+            });
+        </script>
     </head>
-    <body style="color: #0000AA;">
-        <div class="welcome-page">
-            Hello from Bindtape project!
+    <body>
+        <div class="bt-header">
+            <div class="bt-header__overlay">
+                <div  class="bt-header__overlay_name _noselect">
+                    BINDTAPE
+                    
+                    <div  class="bt-header__overlay_description _noselect">
+                        Music Social Network
+                    </div>
+                </div>
+            </div>
+            <img class="bt-header__logo" src="images/web-icon.png" height="90"/>
+            <img class="bt-header__logo_wheel _left" src="images/wheel1.png" height="23.5"/>
+            <img class="bt-header__logo_wheel _right" src="images/wheel2.png" height="23.5"/>
+        </div>    
+        <div class="bt-content">
+            <div class="bt-content__block _bg1 _black">
+                <div class="bt-content__block_text">
+                    Bindtape is an app for sharing the entire musical experience by merging images, text and music. The application is integrated with Apple Music, so you need Apple Music subscription to use it.
+                </div>
+            </div>
+                
+            <div class="bt-content__block _black">
+            Bindtape is an app for sharing the entire musical experience by merging images, text and playlists.
+            </div>
         </div>
     </body>
 </html>

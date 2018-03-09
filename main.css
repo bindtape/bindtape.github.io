@@ -1,0 +1,94 @@
+body {
+    font-family: 'helvetica neue', 'helvetica';
+    margin: 0;
+    min-width: 700px;
+}
+
+._noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.bt-header__overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    background-color: lightgray;
+    width: 100%;
+    height: 100px;
+    opacity: 0.98; 
+    background: lightgray;
+    text-align: center;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#318EEC, endColorstr=#68C0EC)"; /* IE 8-9 */
+    background: -webkit-linear-gradient(left, #318EEC, #68C0EC); /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+    background: -moz-linear-gradient(left, #318EEC, #68C0EC); /* Firefox 3.6-15 */
+    background: -o-linear-gradient(left, #318EEC, #68C0EC); /* Opera 11.1-12 */
+    background: linear-gradient(to right, #68C0EC, #4BD6E2); /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+}
+
+.bt-header__overlay_name {
+    display: inline-block;
+    color: white;
+    font-size: 46px;
+    padding-top: 8px;
+}
+
+.bt-header__overlay_description {
+    font-size: 22px;
+}
+
+.bt-header__logo {
+    position: fixed;
+    left: 20px;
+    top: 6px;
+    opacity: 1.0;
+}
+
+.bt-header__logo_wheel._left {
+    position: fixed;
+    left: 40px;
+    top: 34px;
+    opacity: 1.0;
+}
+
+.bt-header__logo_wheel._right {
+    position: fixed;
+    left: 103px;
+    top: 34px;
+    opacity: 1.0;
+}
+
+.bt-content {
+    padding: 100px 0 0 0;
+    height: 1600px;
+}
+
+.bt-content__block {
+    font-size: 27px;
+    width: 100%;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 320px;
+}
+
+.bt-content__block_text {
+    display: inline-block;
+    font-size: 27px;
+    width: 620px;
+}
+
+.bt-content__block._bg1 {
+    background: url(images/bg1.jpg);
+    background-size: cover;   
+}
+
+.bt-content__block._black {
+    background-color: black;
+    color: white;
+}
