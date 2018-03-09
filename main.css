@@ -14,6 +14,10 @@ body {
                                   supported by Chrome and Opera */
 }
 
+._text-small {
+    font-size: 15px;    
+}
+
 .bt-header__overlay {
     position: fixed;
     left: 0;
@@ -25,10 +29,10 @@ body {
     opacity: 0.98; 
     background: lightgray;
     text-align: center;
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#318EEC, endColorstr=#68C0EC)"; /* IE 8-9 */
-    background: -webkit-linear-gradient(left, #318EEC, #68C0EC); /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
-    background: -moz-linear-gradient(left, #318EEC, #68C0EC); /* Firefox 3.6-15 */
-    background: -o-linear-gradient(left, #318EEC, #68C0EC); /* Opera 11.1-12 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#68C0EC, endColorstr=#4BD6E2)"; /* IE 8-9 */
+    background: -webkit-linear-gradient(left, #68C0EC, #4BD6E2); /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+    background: -moz-linear-gradient(left, #68C0EC, #4BD6E2); /* Firefox 3.6-15 */
+    background: -o-linear-gradient(left, #68C0EC, #4BD6E2); /* Opera 11.1-12 */
     background: linear-gradient(to right, #68C0EC, #4BD6E2); /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
 }
 
@@ -74,7 +78,7 @@ body {
     width: 100%;
     text-align: center;
     padding-top: 200px;
-    padding-bottom: 320px;
+    padding-bottom: 220px;
 }
 
 .bt-content__block_text {
@@ -90,5 +94,15 @@ body {
 
 .bt-content__block._black {
     background-color: black;
+    color: white;
+}
+
+.bt-content__block._blue {
+    background-color: #68C0EC;
+    color: white;
+}
+
+.bt-content__block._sea {
+    background-color: #4BD6E2;
     color: white;
 }
