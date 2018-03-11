@@ -1,7 +1,7 @@
 body {
     font-family: 'helvetica neue', 'helvetica';
     margin: 0;
-    min-width: 700px;
+    min-width: 900px;
 }
 
 ._noselect {
@@ -74,7 +74,7 @@ body {
 }
 
 .bt-content__block {
-    font-size: 27px;
+    font-size: 25px;
     width: 100%;
     text-align: center;
     padding-top: 200px;
@@ -83,8 +83,26 @@ body {
 
 .bt-content__block_text {
     display: inline-block;
-    font-size: 27px;
+    font-size: 25px;
     width: 620px;
+}
+
+.bt-content__block_wrapper {
+    display: inline-block;
+    width: 900px;
+}
+
+.bt-content__block_text_left {
+    float: left;
+    width: calc(100% - 310px);
+    padding: 200px 0px;
+    text-align: center;
+}
+
+.bt-content__block_text_left > div {
+    display: inline-block;
+    width: 400px;
+    text-align: right 
 }
 
 .bt-content__block._bg1 {
