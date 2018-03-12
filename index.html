@@ -7,13 +7,7 @@
             var sdegree = 0;
 
             $(window).scroll(function() {
-                sdegree = sdegree - 2;
-                //var scrollTop = $(window).scrollTop();
-                //if (scrollTop >= 200) {
-                //    $('.bt-header__overlay').height(60);
-                //} else {
-                //    $('.bt-header__overlay').height(100 - scrollTop / 5);
-                //}
+                sdegree = sdegree - 3;
                 var srotate = "rotate(" + sdegree + "deg)";
                 $(".bt-header__logo_wheel").css({"-moz-transform" : srotate, "-webkit-transform" : srotate});
             });
@@ -24,7 +18,6 @@
             <div class="bt-header__overlay">
                 <div  class="bt-header__overlay_name _noselect">
                     BINDTAPE
-                    
                     <div  class="bt-header__overlay_description _noselect">
                         Music Social Network
                     </div>
@@ -37,13 +30,15 @@
         <div class="bt-content">
             <div class="bt-content__block _blue">
                 <div class="bt-content__block_text">
-                    Bindtape is an app for sharing the entire musical experience by merging images, text and music. The application is integrated with Apple Music, so you need Apple Music subscription to use it.
+                    Bindtape is an app for sharing the entire musical experience by merging images, text and playlists. <br> Now you can instantly share your music and art experience with a maximum number of friends.
+                    
                     <br>
                     <br>
                     <img src="images/appbadge.png" height="60"/>
                     <br>
                     <span class="_text-small">
-                        Release in June 2018
+                        Bindtape is integrated with Apple Music<br>and you need Apple Music subscription to use it.<br><br>
+                        Release in June 2018.
                     </span>
                 </div>
             </div>
@@ -52,12 +47,22 @@
                 <div class="bt-content__block_wrapper">
                     <div class="bt-content__block_text_left">
                         <div>
-                            Here will be some description and screenshots of application. And some other text. Describing application.
+                            Bindtape lets users share the mood of the moment quickly and easily. It connects to the music streaming services the user is subscribed to. <br><br> Currently, Bindtape is integrated with IOS and Apple Music. <br><br> Bindtape posts include images and captions that enrich the music sharing. Bindtape friend feed is a stream of synesthetic experiences.
                         </div>
                     </div>
                     <img class="bt-content__block_image_right" src="images/iphone.png" width="280"/>
                 </div>
             </div>
         </div>
+        <div class="bt-bottom-bar">
+            <div class="bt-bottom-bar__block">
+                Bindtape 2018 &#x24B8;
+                <br>
+            </div>
+            <div class="bt-bottom-bar__block _right">
+                Contacts:
+                <br>
+                <a style="color: #DDDDDD" href="mailto:bindtapemusic@gmail.com">bindtapemusic@gmail.com</a>
+            </div>
     </body>
 </html>

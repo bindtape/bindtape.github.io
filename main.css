@@ -2,10 +2,12 @@ body {
     font-family: 'helvetica neue', 'helvetica';
     margin: 0;
     min-width: 900px;
+    background: black;
 }
 
 ._noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
        -moz-user-select: none; /* Firefox */
@@ -70,7 +72,6 @@ body {
 
 .bt-content {
     padding: 100px 0 0 0;
-    height: 1600px;
 }
 
 .bt-content__block {
@@ -95,7 +96,7 @@ body {
 .bt-content__block_text_left {
     float: left;
     width: calc(100% - 310px);
-    padding: 200px 0px;
+    padding: 100px 0px;
     text-align: center;
 }
 
@@ -110,11 +111,6 @@ body {
     background-size: cover;   
 }
 
-.bt-content__block._black {
-    background-color: black;
-    color: white;
-}
-
 .bt-content__block._blue {
     background-color: #68C0EC;
     color: white;
@@ -123,4 +119,20 @@ body {
 .bt-content__block._sea {
     background-color: #4BD6E2;
     color: white;
+}
+
+.bt-bottom-bar {
+    background-color: black;
+    color: #DDDDDD;
+    font-size: 14px;  
+    padding: 20px 20px 32px 20px;
+}
+
+.bt-bottom-bar__block {
+    display: inline-block;
+}
+
+.bt-bottom-bar__block._right {
+    right: 40px;
+    position: absolute 
 }
